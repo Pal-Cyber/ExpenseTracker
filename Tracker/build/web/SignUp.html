@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up Page</title>
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        /* Container for the form */
+        .signup-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Heading styling */
+        .signup-container h2 {
+            margin-bottom: 1rem;
+            color: #4facfe;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Label and input styling */
+        label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: #555;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Button styling */
+        button[type="submit"] {
+            background-color: #4facfe;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #00c2fe;
+        }
+
+        /* Link styling */
+        .login-link {
+            margin-top: 1rem;
+            display: block;
+            font-size: 0.9rem;
+            color: #4facfe;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="SignupServlet" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <!-- Login link -->
+     <p> Already have an account? </p> <a href="http://localhost:8080/Tracker/index.html" class="login-link"> Log in</a>
+    </div>
+</body>
+</html>

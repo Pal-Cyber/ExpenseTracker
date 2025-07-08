@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+            /* Basic reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body styling */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #ff7e5f, #feb47b);
+                color: #444;
+            }
+
+            /* Center container */
+            .container {
+                width: 100%;
+                max-width: 400px;
+                background-color: #fff;
+                padding: 2em;
+                border-radius: 10px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            /* Form styling */
+            h2 {
+                margin-bottom: 1em;
+                color: #333;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 0.5em;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 0.8em;
+                margin-bottom: 1em;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                outline: none;
+                font-size: 1em;
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                border-color: #ff7e5f;
+            }
+
+            button {
+                width: 100%;
+                padding: 0.8em;
+                background-color: #ff7e5f;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #feb47b;
+            }
+
+            /* Link to Sign-Up */
+            .signup-link {
+                margin-top: 1.5em;
+                font-size: 0.9em;
+                color: #555;
+            }
+
+            .signup-link a {
+                color: #ff7e5f;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .signup-link a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login</h2>
+            <form action="LoginServlet" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Sign-Up link -->
+            <div class="signup-link">
+                <p>Don't have an account? <a href="http://localhost:8080/Tracker/SignUp.html">Sign Up</a></p>
+            </div>
+        </div>
+    </body>
+</html>
