@@ -26,4 +26,20 @@ A web-based Expense Tracker application built using **Java Servlets**, **JSP**, 
 ---
 
 ## 📦 Project Structure
+ExpenseTracker/
+├── src/
+│ └── com.expensetracker.* (servlets and models)
+├── WebContent/
+│ ├── index.jsp
+│ ├── login.jsp
+│ ├── dashboard.jsp
+│ └── charts.jsp
+├── lib/ (JAR files like MySQL Connector)
+└── web.xml
+
+## 🔧 Setup Instructions
+
+1. **Clone the repo:**
+```bash
+git clone https://github.com/Pal-Cyber/ExpenseTracker.git
 
